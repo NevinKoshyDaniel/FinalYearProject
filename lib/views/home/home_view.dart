@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project/test/textnew.dart';
 
 import '../../widgets/navigation_bar/navigation_bar.dart';
-import '../../widgets/text_box/text_box.dart';
+import '/test/textnew.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -10,15 +11,12 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-        width: 100,
-        child: Column(
-          children: [
-            Navigation(),
-            SizedBox(height: 100),
-            TextFieldNew(),
-          ],
-        ),
+      body: Column(
+        children: [
+          Navigation(),
+          //SizedBox(height: 100), // add text as chil
+          TextNews(),
+        ],
       ),
     );
   }

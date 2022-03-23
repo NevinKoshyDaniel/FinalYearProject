@@ -9,7 +9,18 @@ class Navigation extends StatelessWidget {
       color: Colors.greenAccent,
       height: 100,
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        NavBarItem('Alarmo'),
+        Row(
+          children: [
+            TextButton(
+                child: Text(
+                  ' ',
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                }),
+            NavBarItem('Arlamo'),
+          ],
+        ),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
