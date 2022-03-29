@@ -36,7 +36,7 @@ class TextNews extends StatelessWidget {
                 child: Text(
                   'Search',
                 ),
-                onPressed: () {
+                onPressed: () { //redirect to Fetch Page
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Fetch()),
